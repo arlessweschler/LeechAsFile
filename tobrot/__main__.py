@@ -54,25 +54,25 @@ if __name__ == "__main__" :
     #
     incoming_message_handler = MessageHandler(
         incoming_message_f,
-        filters=Filters.command(["leechasfile"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["leechfile@LeechAsFileBot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(incoming_message_handler)
     #
     incoming_purge_message_handler = MessageHandler(
         incoming_purge_message_f,
-        filters=Filters.command(["purgeasfile"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["purgefile@LeechAsFileBot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(incoming_purge_message_handler)
     #
     incoming_youtube_dl_handler = MessageHandler(
         incoming_youtube_dl_f,
-        filters=Filters.command(["ytdlasfile"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["ytdlfile@LeechAsFileBot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(incoming_youtube_dl_handler)
     #
     status_message_handler = MessageHandler(
         status_message_f,
-        filters=Filters.command(["statusasfile"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["statusfile@LeechAsFileBot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(status_message_handler)
     #
@@ -84,7 +84,7 @@ if __name__ == "__main__" :
     #
     exec_message_handler = MessageHandler(
         exec_message_f,
-        filters=Filters.command(["execasfile"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["execfile@LeechAsFileBot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(exec_message_handler)
     #
@@ -96,13 +96,13 @@ if __name__ == "__main__" :
     #
     upload_document_handler = MessageHandler(
         upload_document_f,
-        filters=Filters.command(["uploadasfile"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["uploadfile@LeechAsFileBot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(upload_document_handler)
 
     help_text_handler = MessageHandler(
         help_message_f,
-        filters=Filters.command(["helpasfile"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["helpfile@LeechAsFileBot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(help_text_handler)
     #
@@ -125,13 +125,13 @@ if __name__ == "__main__" :
     #
     save_thumb_nail_handler = MessageHandler(
         save_thumb_nail,
-        filters=Filters.command(["savethumbnailasfile"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["savethumbnailfile@LeechAsFileBot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(save_thumb_nail_handler)
     #
     clear_thumb_nail_handler = MessageHandler(
         clear_thumb_nail,
-        filters=Filters.command(["clearthumbnailasfile"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["clearthumbnailfile@LeechAsFileBot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(clear_thumb_nail_handler)
     #
