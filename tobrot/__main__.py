@@ -52,7 +52,7 @@ if __name__ == "__main__" :
     #
     incoming_message_handler = MessageHandler(
         incoming_message_f,
-        filters=Filters.command(["leechfile"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["leech@MaxLeechTo_File_bot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(incoming_message_handler)
     #
@@ -64,13 +64,13 @@ if __name__ == "__main__" :
     #
     incoming_youtube_dl_handler = MessageHandler(
         incoming_youtube_dl_f,
-        filters=Filters.command(["ytdlfile"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["ytdl@MaxLeechTo_File_bot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(incoming_youtube_dl_handler)
     #
     status_message_handler = MessageHandler(
         status_message_f,
-        filters=Filters.command(["statusfile"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["status"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(status_message_handler)
     #
@@ -94,13 +94,13 @@ if __name__ == "__main__" :
     #
     upload_document_handler = MessageHandler(
         upload_document_f,
-        filters=Filters.command(["uploadfile"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["upload"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(upload_document_handler)
 
     # help_text_handler = MessageHandler(
     #    help_message_f,
-    #    filters=Filters.command(["helpfile"]) & Filters.chat(chats=AUTH_CHANNEL)
+    #    filters=Filters.command(["help"]) & Filters.chat(chats=AUTH_CHANNEL)
     # )
     # app.add_handler(help_text_handler)
     #
@@ -123,13 +123,13 @@ if __name__ == "__main__" :
     #
     save_thumb_nail_handler = MessageHandler(
         save_thumb_nail,
-        filters=Filters.command(["savethumbnailfile"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["savethumbnail@MaxLeechTo_File_bot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(save_thumb_nail_handler)
     #
     clear_thumb_nail_handler = MessageHandler(
         clear_thumb_nail,
-        filters=Filters.command(["clearthumbnailfile"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["clearthumbnail@MaxLeechTo_File_bot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(clear_thumb_nail_handler)
     #
