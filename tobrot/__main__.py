@@ -76,7 +76,7 @@ if __name__ == "__main__" :
     #
     cancel_message_handler = MessageHandler(
         cancel_message_f,
-        filters=Filters.command(["cancel"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["Cancel@LeechAsFile_bot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(cancel_message_handler)
     #
@@ -94,7 +94,7 @@ if __name__ == "__main__" :
     #
     upload_document_handler = MessageHandler(
         upload_document_f,
-        filters=Filters.command(["upload"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["upload@LeechAsFile_bot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(upload_document_handler)
 
