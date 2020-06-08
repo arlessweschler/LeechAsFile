@@ -66,7 +66,7 @@ async def incoming_message_f(client, message):
         # create download directory, if not exist
         if not os.path.isdir(new_download_location):
             os.makedirs(new_download_location)
-        await i_m_sefg.edit_text("trying to download")
+        await i_m_sefg.edit_text("trying to download🧐")
         # try to download the "link"
         sagtus, err_message = await call_apropriate_function(
             aria_i_p,
@@ -80,7 +80,7 @@ async def incoming_message_f(client, message):
             await i_m_sefg.edit_text(err_message)
     else:
         await i_m_sefg.edit_text(
-            "**FCUK**! wat have you entered. \nPlease read /help \n"
+            "**FCUK😠**! wat have you entered. \nPlease read👉 /help \n"
             f"<b>API Error</b>: {cf_name}"
         )
 
@@ -126,6 +126,6 @@ async def incoming_youtube_dl_f(client, message):
             )
     else:
         await i_m_sefg.edit_text(
-            "**FCUK**! wat have you entered. \nPlease read /help \n"
+            "**FCUK**! wat have you entered. \nPlease read👉 /help \n"
             f"<b>API Error</b>: {cf_name}"
         )
