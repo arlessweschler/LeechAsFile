@@ -70,7 +70,7 @@ if __name__ == "__main__" :
     #
     status_message_handler = MessageHandler(
         status_message_f,
-        filters=Filters.command(["status"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["status@LeechAsFile_bot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(status_message_handler)
     #
@@ -82,7 +82,7 @@ if __name__ == "__main__" :
     #
     exec_message_handler = MessageHandler(
         exec_message_f,
-        filters=Filters.command(["execfile"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["execfile@LeechAsFile_bot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(exec_message_handler)
     #
